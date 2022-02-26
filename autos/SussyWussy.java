@@ -8,15 +8,6 @@ import com.qualcomm.robotcore.hardware.AnalogInput;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.OpticalDistanceSensor;
 
-/**
- * Team 9960 Revision 170119.0
- * This program is the scaffold for autonomous operation.
- * Designed to push the correct button on both beacons
- *
- * This robot uses four VEX Mecanum wheels, each direct driven by Neverest 40 motors.
- * It is designed as a linear op mode, and uses RUN_TO_POSITION motor operation.
- *
- */
 
 @Autonomous(name="AutoRedBoth")  // @TeleOp(...) is the other common choice
 // @Disabled
