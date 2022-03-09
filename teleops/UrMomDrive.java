@@ -59,8 +59,8 @@ public class UrMomDrive extends LinearOpMode{
             while (opModeIsActive()) {
 
                 //Intake Inputs
-                boolean intakePwr = gamepad1.left_bumper;
-                boolean outtakePwr = gamepad1.right_bumper;
+                double intakePwr = gamepad1.left_trigger;
+                double outtakePwr = gamepad1.right_trigger;
 
                 //Drive Inputs
                 double lpwr = gamepad1.left_stick_y;
@@ -89,6 +89,8 @@ public class UrMomDrive extends LinearOpMode{
                 rightBack.setPower(rightBackPower);
 
                 //move intake motors
+                intake.setPower(intakePwr);
+                conveyor.setPower(intakePwr);
 
                 //move linear slide
                 if (gamepad1.dpad_up || gamepad1.a) {
@@ -105,6 +107,7 @@ public class UrMomDrive extends LinearOpMode{
                     dumpy.setPosition(0);
                 }
 
+                //rotate carousel
 
 
 
